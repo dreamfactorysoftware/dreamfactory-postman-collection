@@ -37,9 +37,9 @@
 							"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"name\": \"trucks\",\r\n      \"label\": \"Truck\",\r\n      \"plural\": \"Trucks\",\r\n      \"field\": [\r\n        {\r\n          \"name\": \"id\",\r\n          \"label\": \"Primary Key\",\r\n          \"type\": \"id\"\r\n        },\r\n        {\r\n          \"name\": \"make\",\r\n          \"label\": \"Truck Make\",\r\n          \"type\": \"string\",\r\n          \"length\": 40\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/_schema",
+							"raw": "{{BASE_URL}}/_schema",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"_schema"
@@ -76,9 +76,9 @@
 									"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"name\": \"trucks\",\r\n      \"label\": \"Truck\",\r\n      \"plural\": \"Trucks\",\r\n      \"field\": [\r\n        {\r\n          \"name\": \"id\",\r\n          \"label\": \"Primary Key\",\r\n          \"type\": \"id\"\r\n        },\r\n        {\r\n          \"name\": \"make\",\r\n          \"label\": \"Truck Make\",\r\n          \"type\": \"string\",\r\n          \"length\": 40\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/_schema",
+									"raw": "{{BASE_URL}}/_schema",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"_schema"
@@ -119,9 +119,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/_schema/",
+							"raw": "{{BASE_URL}}/_schema/",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"_schema",
@@ -156,9 +156,9 @@
 									}
 								],
 								"url": {
-									"raw": "{{Server 3}}/_schema/",
+									"raw": "{{BASE_URL}}/_schema/",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"_schema",
@@ -198,9 +198,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{Server 3}}/mysql/_schema/trucks",
+							"raw": "{{BASE_URL}}/mysql/_schema/trucks",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"mysql",
@@ -234,9 +234,9 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{Server 3}}/mysql/_schema/trucks",
+									"raw": "{{BASE_URL}}/mysql/_schema/trucks",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"mysql",
@@ -282,9 +282,9 @@
 							"raw": "{\r\n  \"label\": \"Truck Model\",\r\n  \"type\": \"string\",\r\n  \"length\": 40\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 2}}/mysql/_schema/trucks/_field/model",
+							"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/model",
 							"host": [
-								"{{Server 2}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"mysql",
@@ -325,9 +325,9 @@
 									"raw": "{\r\n  \"label\": \"Truck Model\",\r\n  \"type\": \"string\",\r\n  \"length\": 40\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 2}}/mysql/_schema/trucks/_field/model",
+									"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/model",
 									"host": [
-										"{{Server 2}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"mysql",
@@ -371,9 +371,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{Server 3}}/mysql/_schema/trucks/_field/make",
+							"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/make",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"mysql",
@@ -410,9 +410,9 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{Server 3}}/mysql/_schema/trucks/_field/make",
+									"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/make",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"mysql",
@@ -460,9 +460,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{Server 2}}/mysql/_table/employees/500015",
+							"raw": "{{BASE_URL}}/mysql/_table/employees/500015",
 							"host": [
-								"{{Server 2}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"mysql",
@@ -496,9 +496,9 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{Server 2}}/mysql/_table/employees/500015",
+									"raw": "{{BASE_URL}}/mysql/_table/employees/500015",
 									"host": [
-										"{{Server 2}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"mysql",
@@ -545,9 +545,9 @@
 							"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 500036,\r\n      \"birth_date\": \"1900-12-12\",\r\n      \"first_name\": \"Joe\",\r\n      \"last_name\": \"Texas\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/employees",
+							"raw": "{{BASE_URL}}/employees",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -578,9 +578,9 @@
 									"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 500036,\r\n      \"birth_date\": \"1900-12-12\",\r\n      \"first_name\": \"Joe\",\r\n      \"last_name\": \"Texas\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/employees",
+									"raw": "{{BASE_URL}}/employees",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -624,9 +624,9 @@
 							"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"dept_no\": \"d015\",\r\n      \"dept_name\": \"Fruit Department\"\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/mysql/_table/departments",
+							"raw": "{{BASE_URL}}/mysql/_table/departments",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"mysql",
@@ -665,9 +665,9 @@
 									"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"dept_no\": \"d015\",\r\n      \"dept_name\": \"Fruit Department\"\r\n    }\r\n  ]\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/mysql/_table/departments",
+									"raw": "{{BASE_URL}}/mysql/_table/departments",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"mysql",
@@ -701,9 +701,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/employees",
+							"raw": "{{BASE_URL}}/employees",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -722,9 +722,9 @@
 									}
 								],
 								"url": {
-									"raw": "{{Server 3}}/employees",
+									"raw": "{{BASE_URL}}/employees",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -782,9 +782,9 @@
 							]
 						},
 						"url": {
-							"raw": "{{Server 3}}/_table/salaries?fields=emp_no,salary",
+							"raw": "{{BASE_URL}}/_table/salaries?fields=emp_no,salary",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"_table",
@@ -812,9 +812,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/_table/employees/10726",
+							"raw": "{{BASE_URL}}/_table/employees/10726",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"_table",
@@ -837,9 +837,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/_table/salaries?fields=salary&group=salary",
+							"raw": "{{BASE_URL}}/_table/salaries?fields=salary&group=salary",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"_table",
@@ -871,9 +871,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/_table/departments/",
+							"raw": "{{BASE_URL}}/_table/departments/",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"_table",
@@ -905,9 +905,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/employees?related=departments_by_dept_emp",
+							"raw": "{{BASE_URL}}/employees?related=departments_by_dept_emp",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -936,9 +936,9 @@
 									}
 								],
 								"url": {
-									"raw": "{{Server 3}}/employees?related=departments_by_dept_emp",
+									"raw": "{{BASE_URL}}/employees?related=departments_by_dept_emp",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -974,9 +974,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/employees?fields=first_name,last_name&related=departments_by_dept_emp",
+							"raw": "{{BASE_URL}}/employees?fields=first_name,last_name&related=departments_by_dept_emp",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -1009,9 +1009,9 @@
 									}
 								],
 								"url": {
-									"raw": "{{Server 3}}/employees?fields=first_name,last_name&related=departments_by_dept_emp",
+									"raw": "{{BASE_URL}}/employees?fields=first_name,last_name&related=departments_by_dept_emp",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -1071,9 +1071,9 @@
 							"raw": "{\r\n  \"last_name\": \"Facelli\",\r\n  \"dept_emp_by_emp_no\": [\r\n    {\r\n      \"dept_no\": \"d006\"\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/mysql/_table/employees/filter=emp_no=10001",
+							"raw": "{{BASE_URL}}/mysql/_table/employees/filter=emp_no=10001",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"mysql",
@@ -1113,9 +1113,9 @@
 									"raw": "{\r\n  \"last_name\": \"Facelli\",\r\n  \"dept_emp_by_emp_no\": [\r\n    {\r\n      \"dept_no\": \"d006\"\r\n    }\r\n  ]\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/mysql/_table/employees/filter=emp_no=10001",
+									"raw": "{{BASE_URL}}/mysql/_table/employees/filter=emp_no=10001",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"mysql",
@@ -1162,9 +1162,9 @@
 							"raw": "{\r\n  \"name\": \"Silver Staplers\"\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/supplies/8",
+							"raw": "{{BASE_URL}}/supplies/8",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"supplies",
@@ -1202,9 +1202,9 @@
 									"raw": "{\r\n  \"name\": \"Silver Staplers\"\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/supplies/8",
+									"raw": "{{BASE_URL}}/supplies/8",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"supplies",
@@ -1249,9 +1249,9 @@
 							"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 2000000,\r\n      \"birth_date\": \"1900-12-15\",\r\n      \"first_name\": \"Kevin\",\r\n      \"last_name\": \"Footballs\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/employees",
+							"raw": "{{BASE_URL}}/employees",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -1288,9 +1288,9 @@
 									"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 2000000,\r\n      \"birth_date\": \"1900-12-15\",\r\n      \"first_name\": \"Kevin\",\r\n      \"last_name\": \"Footballs\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/employees",
+									"raw": "{{BASE_URL}}/employees",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -1326,9 +1326,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{Server 3}}/employees?related=employee_redundant",
+							"raw": "{{BASE_URL}}/employees?related=employee_redundant",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -1357,9 +1357,9 @@
 									}
 								],
 								"url": {
-									"raw": "{{Server 3}}/employees?related=employee_redundant",
+									"raw": "{{BASE_URL}}/employees?related=employee_redundant",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -1409,9 +1409,9 @@
 							"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 10001,\r\n      \"birth_date\": \"1953-09-02\",\r\n      \"first_name\": \"Georgi\",\r\n      \"last_name\": \"Facello\",\r\n      \"gender\": \"M\",\r\n      \"hire_date\": \"1986-06-26\",\r\n      \"birth_year\": \"1953\",\r\n      \"legacy.hobbies_by_employee_id\": {\r\n        \"id\": 1,\r\n        \"employee_id\": 10001,\r\n        \"sport\": \"go\"\r\n      }\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "{{Server 3}}/employees",
+							"raw": "{{BASE_URL}}/employees",
 							"host": [
-								"{{Server 3}}"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"employees"
@@ -1448,9 +1448,9 @@
 									"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 10001,\r\n      \"birth_date\": \"1953-09-02\",\r\n      \"first_name\": \"Georgi\",\r\n      \"last_name\": \"Facello\",\r\n      \"gender\": \"M\",\r\n      \"hire_date\": \"1986-06-26\",\r\n      \"birth_year\": \"1953\",\r\n      \"legacy.hobbies_by_employee_id\": {\r\n        \"id\": 1,\r\n        \"employee_id\": 10001,\r\n        \"sport\": \"go\"\r\n      }\r\n    }\r\n  ]\r\n}"
 								},
 								"url": {
-									"raw": "{{Server 3}}/employees",
+									"raw": "{{BASE_URL}}/employees",
 									"host": [
-										"{{Server 3}}"
+										"{{BASE_URL}}"
 									],
 									"path": [
 										"employees"
@@ -1493,31 +1493,13 @@
 	],
 	"variable": [
 		{
-			"id": "e2e6cf9a-444b-4787-888c-c73265caa3fa",
-			"key": "Server 1",
-			"value": "http://df-admin.wscsnet.net/api/v2/cmhworksdebug/_table",
-			"type": "string"
-		},
-		{
-			"id": "8b953ef8-1488-4ba1-b4f3-66855c12d64a",
-			"key": "Server 2",
-			"value": "http://13.56.140.219/api/v2",
-			"type": "string"
-		},
-		{
-			"id": "a5e1a854-38c1-4349-8515-3a933af0764a",
-			"key": "Server 3",
+			"id": "4872defb-09e5-42bb-8368-4e79062f3422",
+			"key": "BASE_URL",
 			"value": "https://demo.dreamfactory.com/api/v2/mysql-playground/",
 			"type": "string"
 		},
 		{
-			"id": "30ada774-9877-46f3-a222-642b4cc0d51c",
-			"key": "Server 4",
-			"value": "http://localhost:8080/api/v2/mysql2/_table",
-			"type": "string"
-		},
-		{
-			"id": "61eafc5d-e511-4944-ba4b-9352b93e67fe",
+			"id": "40113219-d83f-40a6-abf4-f142e48bd6e3",
 			"key": "demo_api_key",
 			"value": "b261acacd426fb9ef8ef5825d57d4470c7a14fd4ca5350b00dd015bb3bdcd6e6",
 			"type": "string"
