@@ -12,13 +12,6 @@
 </p>
 
 <p align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/dreamfactorysoftware/dreamfactory.svg?style=plastic">
-    <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/dreamfactorysoftware/df-docker.svg?style=plastic">
-    <img alt="Docker Build Status" src="https://img.shields.io/docker/build/dreamfactorysoftware/dreamfactory.svg?style=plastic">
-    <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/dreamfactorysoftware/dreamfactory.svg?style=plastic">
-</p>
-
-<p align="center">
     <a href="https://twitter.com/dfsoftwareinc?lang=en"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dfsoftwareinc.svg?style=social"></a>
 </p>
 
@@ -58,15 +51,13 @@ This should be set in your [Postman environment](https://learning.postman.com/do
 
 A collection-scope variable `BASE_URL` points to the host. For the purpose of this collection we have created a demo server `https://demo.dreamfactory.com/api/v2/mysql-playground/`.
 
-DreamFactory Enterprise customers and DreamFactory EU customers can override this in your Postman environment to point to the [appropriate host](https://developers.DreamFactory.com/api/index.html#header-api-endpoints).
-For instance, if you are a DreamFactory EU customer, you set the Postman environment variable `BASE_URL` to `https://api.eu.DreamFactory.com`.
 
 More information on managing Postman environments and variables can be found [here](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables).
 
 |Variable  |Default value               |Set in         |
 |----------|----------------------------|---------------|
 |`API_KEY` |b261acacd426fb9ef8ef5825d57d4470c7a14fd4ca5350b00dd015bb3bdcd6e6                          |Collection    |-                |-      |
-|`BASE_URL`|`https://demo.dreamfactory.com/api/v2/mysql-playground/` |Collection     |Environment      |`https://api.eu.DreamFactory.com`|
+|`BASE_URL`|`https://demo.dreamfactory.com/api/v2/mysql-playground/` |Collection     |Environment      |
 
 
 
