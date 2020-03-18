@@ -33,7 +33,7 @@ More information about the API can be found on the [DreamFactory Guide](https://
 
 To use the latest published version, click the following button to import the DreamFactory API as a collection:
 
-[![Run in Postman](https://s3.amazonaws.com/postman-static/run-button.png)](https://app.getpostman.com/run-collection/5d9ae743a661a15d64bb)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a01fb99056769a35df72)
 
 You can also download the collection file from this repo, then import directly into Postman.
 
@@ -49,10 +49,10 @@ The collection is arranged in folders according to the API endpoints.
 All requests require a valid DreamFactory API key.  The collection requests have a placeholder variable called `X-DreamFactory-Api-Key` for this.
 This should be set in your [Postman environment](https://learning.postman.com/docs/postman/variables-and-environments/variables/#understanding-variables-and-environments) i.e. outside the collection itself.
 
-A collection-scope variable `BASE_URL` points to the host. For the purpose of this collection we have created a demo server `https://demo.dreamfactory.com/api/v2/mysql-playground/`.
+A collection-scope variable `BASE_URL` points to the host. For the purpose of this collection we have created a demo server `https://demo.dreamfactory.com/api/v2/mysql-playground/`
 
 
-More information on managing Postman environments and variables can be found [here](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables).
+More information on managing Postman environments and variables can be found [here](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables)
 
 |Variable  |Default value               |Set in         |
 |----------|----------------------------|---------------|
