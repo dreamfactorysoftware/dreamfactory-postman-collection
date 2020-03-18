@@ -49,10 +49,10 @@ The collection is arranged in folders according to the API endpoints.
 All requests require a valid DreamFactory API key.  The collection requests have a placeholder variable called `X-DreamFactory-Api-Key` for this.
 This should be set in your [Postman environment](https://learning.postman.com/docs/postman/variables-and-environments/variables/#understanding-variables-and-environments) i.e. outside the collection itself.
 
-A collection-scope variable `BASE_URL` points to the host. For the purpose of this collection we have created a demo server `https://demo.dreamfactory.com/api/v2/mysql-playground/`.
+A collection-scope variable `BASE_URL` points to the host. For the purpose of this collection we have created a demo server `https://demo.dreamfactory.com/api/v2/mysql-playground/`
 
 
-More information on managing Postman environments and variables can be found [here](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables).
+More information on managing Postman environments and variables can be found [here](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables)
 
 |Variable  |Default value               |Set in         |
 |----------|----------------------------|---------------|
