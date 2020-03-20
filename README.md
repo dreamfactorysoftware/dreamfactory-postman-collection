@@ -33,7 +33,7 @@ More information about the API can be found on the [DreamFactory Guide](https://
 
 To use the latest published version, click the following button to import the DreamFactory API as a collection:
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a01fb99056769a35df72)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/a01fb99056769a35df72)
 
 You can also download the collection file from this repo, then import directly into Postman.
 
