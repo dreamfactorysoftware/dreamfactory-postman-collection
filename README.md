@@ -56,7 +56,7 @@ More information on managing Postman environments and variables can be found [he
 
 |Variable  |Default value               |Set in         |
 |----------|----------------------------|---------------|
-|`API_KEY` |b261acacd426fb9ef8ef5825d57d4470c7a14fd4ca5350b00dd015bb3bdcd6e6                          |Collection    |-                |-      |
+|`demo_api_key` |b261acacd426fb9ef8ef5825d57d4470c7a14fd4ca5350b00dd015bb3bdcd6e6                          |Collection    |-                |-      |
 |`BASE_URL`|`https://demo.dreamfactory.com/api/v2/mysql-playground/` |Collection     |Environment      |
 
 
