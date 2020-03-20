@@ -1,0 +1,1504 @@
+{
+	"info": {
+		"_postman_id": "14975b35-3288-4ad7-a287-f6bf8687f732",
+		"name": "DreamFactory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Databases",
+			"item": [
+				{
+					"name": "MySQL",
+					"item": [
+						{
+							"name": "Schema",
+							"item": [
+								{
+									"name": "Create table schema",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"name\": \"trucks\",\r\n      \"label\": \"Truck\",\r\n      \"plural\": \"Trucks\",\r\n      \"field\": [\r\n        {\r\n          \"name\": \"id\",\r\n          \"label\": \"Primary Key\",\r\n          \"type\": \"id\"\r\n        },\r\n        {\r\n          \"name\": \"make\",\r\n          \"label\": \"Truck Make\",\r\n          \"type\": \"string\",\r\n          \"length\": 40\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/_schema",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_schema"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"name\": \"trucks\",\r\n      \"label\": \"Truck\",\r\n      \"plural\": \"Trucks\",\r\n      \"field\": [\r\n        {\r\n          \"name\": \"id\",\r\n          \"label\": \"Primary Key\",\r\n          \"type\": \"id\"\r\n        },\r\n        {\r\n          \"name\": \"make\",\r\n          \"label\": \"Truck Make\",\r\n          \"type\": \"string\",\r\n          \"length\": 40\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/_schema",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"_schema"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Retrieve table schema",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/_schema",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_schema"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}/_schema",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"_schema"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Drop table",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "3f7355ab7f01284b15d12544743f3ed93aafedbbd2e1ae25a45408f9225bc7d7"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/mysql/_schema/trucks",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"mysql",
+												"_schema",
+												"trucks"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "3f7355ab7f01284b15d12544743f3ed93aafedbbd2e1ae25a45408f9225bc7d7"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/mysql/_schema/trucks",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"mysql",
+														"_schema",
+														"trucks"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Add attribute",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"label\": \"Truck Model\",\r\n  \"type\": \"string\",\r\n  \"length\": 40\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/model",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"mysql",
+												"_schema",
+												"trucks",
+												"_field",
+												"model"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"label\": \"Truck Model\",\r\n  \"type\": \"string\",\r\n  \"length\": 40\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/model",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"mysql",
+														"_schema",
+														"trucks",
+														"_field",
+														"model"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Delete attribute",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/make",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"mysql",
+												"_schema",
+												"trucks",
+												"_field",
+												"make"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/mysql/_schema/trucks/_field/make",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"mysql",
+														"_schema",
+														"trucks",
+														"_field",
+														"make"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Data Mesh",
+							"item": [
+								{
+									"name": "Data Mesh with View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}"
+											},
+											{
+												"key": "Accept",
+												"value": ""
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/_table/employees?related=employee_redundant",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_table",
+												"employees"
+											],
+											"query": [
+												{
+													"key": "related",
+													"value": "employee_redundant"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}"
+													},
+													{
+														"key": "Accept",
+														"value": ""
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}/_table/employees?related=employee_redundant",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"_table",
+														"employees"
+													],
+													"query": [
+														{
+															"key": "related",
+															"value": "employee_redundant"
+														}
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Data Mesh multiple DB update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 10001,\r\n      \"birth_date\": \"1953-09-02\",\r\n      \"first_name\": \"Georgi\",\r\n      \"last_name\": \"Facello\",\r\n      \"gender\": \"M\",\r\n      \"hire_date\": \"1986-06-26\",\r\n      \"birth_year\": \"1953\",\r\n      \"legacy.hobbies_by_employee_id\": {\r\n        \"id\": 1,\r\n        \"employee_id\": 10001,\r\n        \"sport\": \"go\"\r\n      }\r\n    }\r\n  ]\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/employees",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"employees"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 10001,\r\n      \"birth_date\": \"1953-09-02\",\r\n      \"first_name\": \"Georgi\",\r\n      \"last_name\": \"Facello\",\r\n      \"gender\": \"M\",\r\n      \"hire_date\": \"1986-06-26\",\r\n      \"birth_year\": \"1953\",\r\n      \"legacy.hobbies_by_employee_id\": {\r\n        \"id\": 1,\r\n        \"employee_id\": 10001,\r\n        \"sport\": \"go\"\r\n      }\r\n    }\r\n  ]\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/employees",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"employees"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Updating Records",
+							"item": [
+								{
+									"name": "Patch Employees and Department",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"last_name\": \"Facelli\",\r\n  \"dept_emp_by_emp_no\": [\r\n    {\r\n      \"dept_no\": \"d006\"\r\n    }\r\n  ]\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/mysql/_table/employees/filter=emp_no=10001",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"mysql",
+												"_table",
+												"employees",
+												"filter=emp_no=10001"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"last_name\": \"Facelli\",\r\n  \"dept_emp_by_emp_no\": [\r\n    {\r\n      \"dept_no\": \"d006\"\r\n    }\r\n  ]\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/mysql/_table/employees/filter=emp_no=10001",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"mysql",
+														"_table",
+														"employees",
+														"filter=emp_no=10001"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Patch Supplies",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Silver Staplers\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/supplies/8",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"supplies",
+												"8"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"name\": \"Silver Staplers\"\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/supplies/8",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"supplies",
+														"8"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PUT Employees",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 2000000,\r\n      \"birth_date\": \"1900-12-15\",\r\n      \"first_name\": \"Kevin\",\r\n      \"last_name\": \"Footballs\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/employees",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"employees"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 2000000,\r\n      \"birth_date\": \"1900-12-15\",\r\n      \"first_name\": \"Kevin\",\r\n      \"last_name\": \"Footballs\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/employees",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"employees"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "JOINs",
+							"item": [
+								{
+									"name": "MySQL JOIN",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/employees?related=departments_by_dept_emp",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"employees"
+											],
+											"query": [
+												{
+													"key": "related",
+													"value": "departments_by_dept_emp"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}/employees?related=departments_by_dept_emp",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"employees"
+													],
+													"query": [
+														{
+															"key": "related",
+															"value": "departments_by_dept_emp"
+														}
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "MySQL JOIN specific fields",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/employees?fields=first_name,last_name&related=departments_by_dept_emp",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"employees"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "first_name,last_name"
+												},
+												{
+													"key": "related",
+													"value": "departments_by_dept_emp"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}/employees?fields=first_name,last_name&related=departments_by_dept_emp",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"employees"
+													],
+													"query": [
+														{
+															"key": "fields",
+															"value": "first_name,last_name"
+														},
+														{
+															"key": "related",
+															"value": "departments_by_dept_emp"
+														}
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Retrieving Records",
+							"item": [
+								{
+									"name": "GET Tables",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://demo.dreamfactory.com/api/v2/mysql-playground/_table",
+											"protocol": "https",
+											"host": [
+												"demo",
+												"dreamfactory",
+												"com"
+											],
+											"path": [
+												"api",
+												"v2",
+												"mysql-playground",
+												"_table"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "MySQL fetch employees",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/_table/employees",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_table",
+												"employees"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}/_table/employees",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"_table",
+														"employees"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "GET Salaries",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "bc3a8bff-0f10-43f3-882f-ab9eb8f4a604",
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);",
+													"postman.setEnvironmentVariable(\"session_token\", jsonData.session_token);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"type": "text",
+												"value": "{{demo_api_key}}"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "email",
+													"value": "api12312@example.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "helloapis",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/_table/salaries?fields=emp_no,salary",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_table",
+												"salaries"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "emp_no,salary"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET Employee by emp no",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/_table/employees/10726",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_table",
+												"employees",
+												"10726"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "MySQL group by Salary",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/_table/salaries?fields=salary&group=salary",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_table",
+												"salaries"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "salary"
+												},
+												{
+													"key": "group",
+													"value": "salary"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Departments",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"type": "text",
+												"value": "{{demo_api_key}}"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/_table/departments/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"_table",
+												"departments",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Creating Records",
+							"item": [
+								{
+									"name": "Create new employees record w first_name validation",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 500036,\r\n      \"birth_date\": \"1900-12-12\",\r\n      \"first_name\": \"Joe\",\r\n      \"last_name\": \"Texas\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/employees",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"employees"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"emp_no\": 500036,\r\n      \"birth_date\": \"1900-12-12\",\r\n      \"first_name\": \"Joe\",\r\n      \"last_name\": \"Texas\",\r\n      \"gender\": \"m\",\r\n      \"hire_date\": \"2007-01-01\"\r\n    }\r\n  ]\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/employees",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"employees"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "MySQL create department",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"dept_no\": \"d015\",\r\n      \"dept_name\": \"Fruit Department\"\r\n    }\r\n  ]\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/mysql/_table/departments",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"mysql",
+												"_table",
+												"departments"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"resource\": [\r\n    {\r\n      \"dept_no\": \"d015\",\r\n      \"dept_name\": \"Fruit Department\"\r\n    }\r\n  ]\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/mysql/_table/departments",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"mysql",
+														"_table",
+														"departments"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Deleting Records",
+							"item": [
+								{
+									"name": "Deleting an employee",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "X-DreamFactory-Api-Key",
+												"value": "{{demo_api_key}}"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/mysql/_table/employees/500015",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"mysql",
+												"_table",
+												"employees",
+												"500015"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Response_200",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "X-DreamFactory-Api-Key",
+														"value": "{{demo_api_key}}"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/mysql/_table/employees/500015",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"mysql",
+														"_table",
+														"employees",
+														"500015"
+													]
+												}
+											},
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "MS SQL Server",
+					"item": [
+						{
+							"name": "Retrieve Customers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-DreamFactory-Api-Key",
+										"value": "{{demo_api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://demo.dreamfactory.com/api/v2/sqlserver/_table/customer",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"dreamfactory",
+										"com"
+									],
+									"path": [
+										"api",
+										"v2",
+										"sqlserver",
+										"_table",
+										"customer"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c2ad1fd9-492c-4343-a6a0-2b7e44e4f64d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "174557df-fabd-4fc5-9f9f-16c188eac75e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a960c333-f939-4ae8-9406-cd8eb851b3e6",
+			"key": "BASE_URL",
+			"value": "https://demo.dreamfactory.com/api/v2/mysql-playground",
+			"type": "string"
+		},
+		{
+			"id": "3f885729-5ad7-4f04-ab59-ca11a5504119",
+			"key": "demo_api_key",
+			"value": "b261acacd426fb9ef8ef5825d57d4470c7a14fd4ca5350b00dd015bb3bdcd6e6",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
