@@ -22,7 +22,7 @@
 </p>
 
 
-[Sign up](https://genie.dreamfactory.com/register) for a DreamFactory account and visit our [Developer Hub](https://developers.DreamFactory.com) for even more content.
+[Sign up](https://genie.dreamfactory.com/register) for a DreamFactory account and visit our [Developer Hub](https://guide.dreamfactory.com/) for even more content.
 
 #  DreamFactory API
 
@@ -39,7 +39,7 @@ You can also download the collection file from this repo, then import directly i
 
 ### Prerequisites
 
-- *Postman* The collection is for use by the Postman app. Postman is a utility that allows you to quickly test and use REST APIs. More information can be found at [getpostman.com](https://www.getpostman.com/).
+- *Postman* The collection is for use by the Postman app. Postman is a utility that allows you to quickly test and use REST APIs. More information can be found at [getpostman.com](https://www.postman.com/downloads/).
 - *DreamFactory API key* To use our API, you must have an API key with permissions enabled for which resource you want to use.
 
 ## Usage
@@ -52,7 +52,6 @@ This should be set in your [Postman environment](https://learning.postman.com/do
 A collection-scope variable `BASE_URL` points to the host. For the purpose of this collection we have created a demo server `https://demo.dreamfactory.com/api/v2/mysql-playground/`
 
 
-More information on managing Postman environments and variables can be found [here](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables)
 
 |Variable  |Default value               |Set in         |
 |----------|----------------------------|---------------|
@@ -67,4 +66,4 @@ More information on managing Postman environments and variables can be found [he
 
 [DreamFactory Blog](https://blog.dreamfactory.com/)
 
-[Postman API development tool](https://www.getpostman.com/)
+[Postman API development tool](https://documenter.getpostman.com/view/631643/JsLs/?version=latest)
